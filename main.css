@@ -1,38 +1,38 @@
 :root {
-    --dark-test-one: #121212; /*heel donker */
-    --dark-test-two: #212121; /*bg color */
-    --dark-test-three: #2e2e2e; /*box/input color */
+    --dark-background: #212121; /*bg color */
+    --dark-input: #2e2e2e; /*box/input color */
     --dark-input-elements: #2e2e2e; /*box/input color */
     --dark-input-elements-hover: #474747;
-    --dark-test-four: #474747; /*selected box color */
-    --dark-test-five: #333333; /*bg color */
     --paragraph-color: #dfdfdf; 
-    --grey: #333333;
-    --grey-two: #1c1c1c;
-    --dark-primary: #121212;
     --doopie-red: #cc1010;
-    /* --dark-primary-lighter: #1f1f1f; */
     --dark-primary-lighter: #212121;
-    --primary-color-dark: #17181e;
-    --primary-color-light: #b0b1b3;
-    --primary-color-light-two: #1d1e24:
 }
 
 .container {
-    background-color: var(--dark-test-two);
+    background-color: var(--dark-background);
+}
+
+.header-top-left p {
+        color: var(--paragraph-color)!important;
 }
 
 #footer {
-    background-color: var(--dark-test-two) !important;
+    background-color: var(--dark-background) !important;
     border: 1px solid var(--doopie-red) !important;
+    font-weight: normal !important;
 }
 
 .nice-select span.current {
-    color: var(--doopie-red) !important;
+    color: var(--paragraph-color)!important;
+}
+
+.nice-select.element.select.medium {
+    background-color: var(--dark-input) !important;
+    border: none !important;
 }
 
 .elementor-2218 .elementor-element.elementor-element-a698d44:not(.elementor-motion-effects-element-type-background), .elementor-2218 .elementor-element.elementor-element-a698d44 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
-    background-color: var(--dark-test-two) !important;
+    background-color: var(--dark-background) !important;
     border-top: 1px solid var(--dark-input-elements);
     border-bottom: 1px solid var(--dark-input-elements);
 }
@@ -43,8 +43,7 @@
 #li_4.highlighted,
 #li_5.highlighted,
 #li_6.highlighted {
-    /* border: 1px solid var(--doopie-red) !important; */
-    border-color: var(--doopie-red) !important;
+    border-color: rgba(204, 16, 16, .3) !important;
 }
 
 #li_1,
@@ -64,7 +63,7 @@
 
 .nice-select .list {
     background-color: var(--dark-input-elements);
-    color: var(--paragraph-color);
+    color: var(--paragraph-color)!important;
 }
 
 .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
@@ -75,10 +74,14 @@ form li span {
     color: var(--paragraph-color) !important;
 }
 
+input.button_text {
+    border: none !important;
+}
+
 input.text {
     color: var(--paragraph-color) !important;
-    background-color: var(--dark-input-elements);
-    border-color: var(--dark-input-elements);
+    background-color: var(--dark-input-elements) !important;
+    border-color: var(--dark-input-elements) !important;
 }
 
 body {
@@ -90,38 +93,38 @@ body {
 }
 
 form li span label {
-    color: var(--primary-color-light) !important;
+    color: var(--paragraph-color)!important;
+
     padding-top: 10px !important;
 }
 
 label.description {
-    color: var(--primary-color-light) !important;
+    color: var(--paragraph-color)!important;
 }
 
 #form_container {
-    /* background: red!important ; */
-    /* background-color: var(--primary-color-light-two) !important; */
-    /* background-color: var(--grey-two) !important; */
     background-color: var(--dark-primary-lighter) !important;
 }
 
 #site-header-wrap.header-layout2 .header-top .header-top-inner .header-top-right .top-right-content .ct-item span {
-    color: var(--primary-color-light) !important;
+    color: var(--paragraph-color)!important;
+
 }
 
 .primary-menu > li.current-menu-ancestor > a {
-    color: var(--primary-color-light) !important;
+    color: var(--paragraph-color) !important;
+
 }
 
 .primary-menu .sub-menu {
     background-color: var(--dark-primary-lighter) !important;
-    color: var(--primary-color-light) !important;
+    color: var(--paragraph-color)!important;
 }
 
 .pirmary-menu .sub-menu li.current_page_item > a, .primary-menu .sub-menu li.current-menu-item > a {
-    color: var(--primary-color-light) !important;
+    color: var(--paragraph-color)!important;
 }
 
 .primary-menu > li > a {
-    color: var(--primary-color-light) !important;
+    color: var(--paragraph-color)!important;
 }
