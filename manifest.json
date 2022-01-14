@@ -1,0 +1,16 @@
+{
+    "name": "Doopiecash black theme",
+    "description": "This extension injects CSS into the Bitcoin calculator page of Doopiecash.nl which allows for toggeling between light (regular) and dark (this plugin) theme. Most people prefer a darker theme for their eyes.",
+    "version": "1.0",
+    "manifest_version": 2,
+    "icons": {
+      "128": "images/128.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://doopiecash.nl/bitcoin-positie-calculator/"],
+        "css": ["main.css"]
+      }
+    ]
+  }
+  

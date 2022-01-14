@@ -1,0 +1,110 @@
+:root {
+    --dark-test-one: #121212; /*heel donker */
+    --dark-test-two: #212121; /*bg color */
+    --dark-test-three: #2e2e2e; /*box/input color */
+    --dark-input-elements: #2e2e2e; /*box/input color */
+    --dark-input-elements-hover: #474747;
+    --dark-test-four: #474747; /*selected box color */
+    --dark-test-five: #333333; /*bg color */
+    --paragraph-color: #dfdfdf; 
+    --grey: #333333;
+    --grey-two: #1c1c1c;
+    --dark-primary: #121212;
+    /* --dark-primary-lighter: #1f1f1f; */
+    --dark-primary-lighter: #212121;
+    --primary-color-dark: #17181e;
+    --primary-color-light: #b0b1b3;
+    --primary-color-light-two: #1d1e24:
+}
+This extension injects CSS into the Bitcoin calculator page of Doopiecash.nl which allows for toggeling between light (regular) and dark (this plugin) theme. Most people prefer a darker theme for their eyes.
+.container {
+    background-color: var(--dark-test-two);
+    /* background-color: red !important; */
+}
+
+form li.highlighted {
+    background-color: none !important;
+    border: 1px solid var(--dark-input-elements-hover);
+    box-sizing: border-box;; 
+}
+
+.nice-select .list {
+    background-color: var(--dark-input-elements);
+    color: var(--paragraph-color);
+}
+
+.nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
+    /* background-color: var(--dark-input-elements-hover);; */
+}
+
+form li span {
+    color: var(--paragraph-color) !important;
+}
+
+input.text {
+    color: var(--paragraph-color) !important;
+    background-color: var(--dark-input-elements);
+    border-color: var(--dark-input-elements);
+}
+
+body {
+    background-color: var(--dark-primary-lighter) !important;
+}
+
+#site-header-wrap.header-layout2 .site-header-main {
+    background-color: var(--dark-primary-lighter) !important;
+}
+
+/* body.elementor-page-4482:not(.elementor-motion-effects-element-type-background),
+body.elementor-page-4482>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+    /* background-color: var(--primary-color-dark); */
+/* background-color:  var(--test); */
+/* } */
+*/ body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+    color: var(--primary-color-light) !important;
+}
+
+form li span label {
+    columns: var(--primary-color-light) !important;
+    padding-top: 10px !important;
+}
+
+label.description {
+    color: var(--primary-color-light) !important;
+}
+
+#form_container {
+    /* background: red!important ; */
+    /* background-color: var(--primary-color-light-two) !important; */
+    /* background-color: var(--grey-two) !important; */
+    background-color: var(--dark-primary-lighter) !important;
+}
+
+#site-header-wrap.header-layout2 .header-top .header-top-inner .header-top-right .top-right-content .ct-item span {
+    color: var(--primary-color-light) !important;
+}
+
+.primary-menu > li.current-menu-ancestor > a {
+    color: var(--primary-color-light) !important;
+}
+
+.primary-menu .sub-menu {
+    background-color: var(--dark-primary-lighter) !important;
+    color: var(--primary-color-light) !important;
+}
+
+.pirmary-menu .sub-menu li.current_page_item > a, .primary-menu .sub-menu li.current-menu-item > a {
+    color: var(--primary-color-light) !important;
+}
+
+.primary-menu > li > a {
+    color: var(--primary-color-light) !important;
+}
