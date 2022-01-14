@@ -8,6 +8,7 @@
     },
     "content_scripts": [
       {
+        "js": ["init.js"],
         "matches": ["https://doopiecash.nl/bitcoin-positie-calculator/"],
         "css": ["main.css"]
       }
