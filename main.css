@@ -10,20 +10,54 @@
     --grey: #333333;
     --grey-two: #1c1c1c;
     --dark-primary: #121212;
+    --doopie-red: #cc1010;
     /* --dark-primary-lighter: #1f1f1f; */
     --dark-primary-lighter: #212121;
     --primary-color-dark: #17181e;
     --primary-color-light: #b0b1b3;
     --primary-color-light-two: #1d1e24:
 }
-This extension injects CSS into the Bitcoin calculator page of Doopiecash.nl which allows for toggeling between light (regular) and dark (this plugin) theme. Most people prefer a darker theme for their eyes.
+
 .container {
     background-color: var(--dark-test-two);
-    /* background-color: red !important; */
 }
 
-form li.highlighted {
-    background-color: none !important;
+#footer {
+    background-color: var(--dark-test-two) !important;
+    border: 1px solid var(--doopie-red) !important;
+}
+
+.nice-select span.current {
+    color: var(--doopie-red) !important;
+}
+
+.elementor-2218 .elementor-element.elementor-element-a698d44:not(.elementor-motion-effects-element-type-background), .elementor-2218 .elementor-element.elementor-element-a698d44 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+    background-color: var(--dark-test-two) !important;
+    border-top: 1px solid var(--dark-input-elements);
+    border-bottom: 1px solid var(--dark-input-elements);
+}
+
+#li_1.highlighted,
+#li_2.highlighted,
+#li_3.highlighted,
+#li_4.highlighted,
+#li_5.highlighted,
+#li_6.highlighted {
+    /* border: 1px solid var(--doopie-red) !important; */
+    border-color: var(--doopie-red) !important;
+}
+
+#li_1,
+#li_2,
+#li_3,
+#li_4,
+#li_5,
+#li_6 {
+    border: 1px solid transparent;
+}
+
+.highlighted {
+    background: none !important;
     border: 1px solid var(--dark-input-elements-hover);
     box-sizing: border-box;; 
 }
@@ -34,7 +68,7 @@ form li.highlighted {
 }
 
 .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
-    /* background-color: var(--dark-input-elements-hover);; */
+    background-color: var(--dark-input-elements-hover);;
 }
 
 form li span {
@@ -55,25 +89,8 @@ body {
     background-color: var(--dark-primary-lighter) !important;
 }
 
-/* body.elementor-page-4482:not(.elementor-motion-effects-element-type-background),
-body.elementor-page-4482>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    /* background-color: var(--primary-color-dark); */
-/* background-color:  var(--test); */
-/* } */
-*/ body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a,
-p {
-    color: var(--primary-color-light) !important;
-}
-
 form li span label {
-    columns: var(--primary-color-light) !important;
+    color: var(--primary-color-light) !important;
     padding-top: 10px !important;
 }
 
