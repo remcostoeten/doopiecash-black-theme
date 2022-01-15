@@ -3,7 +3,7 @@ function themeSwitcher() {
     var content = document.createTextNode('text dit is een');
     themeSwitcher.classList.add('theme');
     themeSwitcher.appendChild(content);
-    document.getElementsByClassName('ct-email')[0].appendChild(themeSwitcher);
+    document.getElementsByClassName('header-top-inner')[0].appendChild(themeSwitcher);
 }
 themeSwitcher();
 
@@ -17,40 +17,31 @@ clicktest.addEventListener('click', function red() {
 });
 
 
+// start dropdown
+var values = ["dark-theme", "white-theme"];
 
-// var themeSwitchter = document.createElement('a');
-// var switcherContent = document.createTextNode('store switcher');
+var select = document.createElement("select");
+select.name = "pets";
+select.id = "pets"
 
-// themeSwitchter.append(switcherContent);
-// themeSwitchter.classList.add('theme-switcher');
+for (const val of values) {
+    var option = document.createElement("option");
+    option.value = val;
+    option.text = val.charAt(0).toUpperCase() + val.slice(1);
+    select.appendChild(option);
+}
 
-// function myFunc(variable){
-//     var s = document.getElementById(variable);
-//     s.value = "new value";
-// }   
-// myFunc("test");
+var label = document.createElement("label");
+label.innerHTML = "Choose your pets: "
+label.htmlFor = "pets";
 
-// $(themeSwitchter).on("click", function () {
+document.getElementById("container").appendChild(label).appendChild(select);
 
+var classVar = 'theme';
+var clicktest = document.getElementsByClassName(classVar)[0];
 
-
-// document.getElementsByClassName('ct-email')[0].appendChild(themeSwitchter);
-// $(function () {
-//     $(themeSwitchter).on("click", function () {
-//         $('#change_me').addClass("make_me_blue");
-//         setTimeout(RemoveClass, 1000);
-//     });
-
-//     function RemoveClass() {
-//         $('#change_me').removeClass("make_me_blue");
-//     }
-// });
-// themeSwitchter.classList.add('theme-switcher');
-
-// var querySelector = document.querySelector.classList.add('test123');
-// document.querySelector('.active') {
-
-
-// document.getElementsByClassName('site-header')[0].appendChild(themeSwitchter);
-
-// themeSwitchter.appendChild(switcherContent);
+clicktest.addEventListener('click', function red() {
+    clicktest.style.backgroundColor = 'blue';
+    clicktest.classList.toggle('theme-switcher');
+});
+//  end dropdown

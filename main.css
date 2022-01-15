@@ -1,9 +1,12 @@
 :root {
-    --dark-background: #212121; /*bg color */
-    --dark-input: #2e2e2e; /*box/input color */
-    --dark-input-elements: #2e2e2e; /*box/input color */
+    --dark-background: #212121;
+    /*bg color */
+    --dark-input: #2e2e2e;
+    /*box/input color */
+    --dark-input-elements: #2e2e2e;
+    /*box/input color */
     --dark-input-elements-hover: #474747;
-    --paragraph-color: #dfdfdf; 
+    --paragraph-color: #dfdfdf;
     --doopie-red: #cc1010;
     --dark-primary-lighter: #212121;
 }
@@ -13,7 +16,7 @@
 }
 
 .header-top-left p {
-        color: var(--paragraph-color)!important;
+    color: var(--paragraph-color) !important;
 }
 
 #footer {
@@ -23,7 +26,7 @@
 }
 
 .nice-select span.current {
-    color: var(--paragraph-color)!important;
+    color: var(--paragraph-color) !important;
 }
 
 .nice-select.element.select.medium {
@@ -31,7 +34,8 @@
     border: none !important;
 }
 
-.elementor-2218 .elementor-element.elementor-element-a698d44:not(.elementor-motion-effects-element-type-background), .elementor-2218 .elementor-element.elementor-element-a698d44 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+.elementor-2218 .elementor-element.elementor-element-a698d44:not(.elementor-motion-effects-element-type-background),
+.elementor-2218 .elementor-element.elementor-element-a698d44>.elementor-motion-effects-container>.elementor-motion-effects-layer {
     background-color: var(--dark-background) !important;
     border-top: 1px solid var(--dark-input-elements);
     border-bottom: 1px solid var(--dark-input-elements);
@@ -46,28 +50,31 @@
     border-color: rgba(204, 16, 16, .3) !important;
 }
 
-.dark-theme #li_1,
-.dark-theme #li_2,
-.dark-theme #li_3,
-.dark-theme #li_4,
-.dark-theme #li_5,
-.dark-theme #li_6 {
+#li_1,
+#li_2,
+#li_3,
+#li_4,
+#li_5,
+#li_6 {
     border: 1px solid transparent;
 }
 
-.dark-theme .highlighted {
+.highlighted {
     background: none !important;
     border: 1px solid var(--dark-input-elements-hover);
     box-sizing: border-box;
 }
 
-.dark-theme .nice-select .list {
+ .nice-select .list {
     background-color: var(--dark-input-elements);
-    color: var(--paragraph-color)!important;
+    color: var(--paragraph-color) !important;
 }
 
-.nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
-    background-color: var(--dark-input-elements-hover);;
+.nice-select .option:hover,
+.nice-select .option.focus,
+.nice-select .option.selected.focus {
+    background-color: var(--dark-input-elements-hover);
+    ;
 }
 
 form li span {
@@ -84,32 +91,32 @@ input.text {
     border-color: var(--dark-input-elements) !important;
 }
 
-.dark-theme input.button_text {
+ input.button_text {
     border: none !important;
 }
 
-.dark-theme input.text {
+ input.text {
     color: var(--paragraph-color) !important;
     background-color: var(--dark-input-elements) !important;
     border-color: var(--dark-input-elements) !important;
 }
 
-.dark-theme body {
+ body {
     background-color: var(--dark-primary-lighter) !important;
 }
 
-.dark-theme #site-header-wrap.header-layout2 .site-header-main {
+ #site-header-wrap.header-layout2 .site-header-main {
     background-color: var(--dark-primary-lighter) !important;
 }
 
 form li span label {
-    color: var(--paragraph-color)!important;
+    color: var(--paragraph-color) !important;
 
     padding-top: 10px !important;
 }
 
 label.description {
-    color: var(--paragraph-color)!important;
+    color: var(--paragraph-color) !important;
 }
 
 #form_container {
@@ -117,24 +124,25 @@ label.description {
 }
 
 #site-header-wrap.header-layout2 .header-top .header-top-inner .header-top-right .top-right-content .ct-item span {
-    color: var(--paragraph-color)!important;
-
-}
-
-.primary-menu > li.current-menu-ancestor > a {
     color: var(--paragraph-color) !important;
 
 }
 
-.dark-theme .primary-menu .sub-menu {
+.primary-menu>li.current-menu-ancestor>a {
+    color: var(--paragraph-color) !important;
+
+}
+
+ .primary-menu .sub-menu {
     background-color: var(--dark-primary-lighter) !important;
-    color: var(--paragraph-color)!important;
+    color: var(--paragraph-color) !important;
 }
 
-.pirmary-menu .sub-menu li.current_page_item > a, .primary-menu .sub-menu li.current-menu-item > a {
-    color: var(--paragraph-color)!important;
+.pirmary-menu .sub-menu li.current_page_item>a,
+.primary-menu .sub-menu li.current-menu-item>a {
+    color: var(--paragraph-color) !important;
 }
 
-.primary-menu > li > a {
-    color: var(--paragraph-color)!important;
+.primary-menu>li>a {
+    color: var(--paragraph-color) !important;
 }
